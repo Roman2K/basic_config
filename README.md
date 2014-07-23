@@ -8,7 +8,7 @@ Example `config.json`:
 ```
 {
   "port": 8080,
-  "db": "mongodb://localhost:27017/my_app")",
+  "db": "mongodb://localhost:27017/my_app",
   "log": "my_app.log",
   "priv_key": "~/.keys/priv"
 }
