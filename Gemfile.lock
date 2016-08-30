@@ -1,0 +1,19 @@
+PATH
+  remote: .
+  specs:
+    basic_config (0.1.1)
+
+GEM
+  remote: https://rubygems.org/
+  specs:
+    minitest (5.9.0)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  basic_config!
+  minitest
+
+BUNDLED WITH
+   1.12.5
