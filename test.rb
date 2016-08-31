@@ -33,14 +33,10 @@ class BasicConfigTest < Minitest::Test
   end
 
   def make_config(entries)
-    file = Tempfile.new "basic_config"
-    file.write JSON.dump(entries)
-    file.close
-    begin
-      config = BasicConfig.new file.path
-    ensure
-      file.delete
+    Tempfile.create "basic_config" do |file|
+      JSON.dump(entries, file)
+      file.close
+      BasicConfig.new file.path
     end
-    config
   end
 end
